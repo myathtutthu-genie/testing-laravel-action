@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  laravel-tests:
+  laravel-ci:
 
     runs-on: ubuntu-latest
 
@@ -30,3 +30,12 @@ jobs:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
       run: vendor/bin/phpunit --testdox
+    - name: Laravel Pint
+      uses: aglipanci/laravel-pint-action@0.1.0
+
+  output-debug:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: myathtutthu-genie/github-action-explore-debug@main
+        with:
+          jq_selector: ".pull_request"
