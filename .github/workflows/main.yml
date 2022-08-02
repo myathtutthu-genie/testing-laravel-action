@@ -30,6 +30,9 @@ jobs:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
       run: vendor/bin/phpunit --testdox
+    - name: Laravel Pint
+      uses: aglipanci/laravel-pint-action@0.1.0
+
   output-debug-two:
     runs-on: ubuntu-18.04
     steps:
