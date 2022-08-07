@@ -37,9 +37,9 @@ jobs:
       env:
         DISCORD_WEBHOOK: "https://discord.com/api/webhooks/1005853981878267924/Oh87RO0xWyZpE22ltqOB4qcZ4EbWHvx40iUj05eKdXoAmS4mWF7sJvMS9u5TdTax9jCl"
       with:
-        nodetail: true
-        title: "We did it!"
-        color: 0xff91a4
+        title: "deploy"
+        description: "Build and deploy to GitHub Pages"
+        color: 0x0000ff
         status: ${{ job.status }}
 
   output-debug:
