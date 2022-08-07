@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "619ce4e90741b99214afc38bfc022f53",
+    "content-hash": "d05ae5379fa7022ec52c025f32f54cf6",
     "packages": [
         {
             "name": "brick/math",
@@ -5504,158 +5504,6 @@
             "time": "2022-01-07T12:00:00+00:00"
         },
         {
-            "name": "genie-fintech/laravel-num",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/genie-fintech/laravel-num.git",
-                "reference": "6e614ff1d6a0221ae765fd763b386f7961a1335e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/genie-fintech/laravel-num/zipball/6e614ff1d6a0221ae765fd763b386f7961a1335e",
-                "reference": "6e614ff1d6a0221ae765fd763b386f7961a1335e",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "^8.0|^9.0",
-                "php": "^8.0"
-            },
-            "require-dev": {
-                "nunomaduro/collision": "^5.10|^6.1",
-                "nunomaduro/larastan": "^1.0|^2.0",
-                "orchestra/testbench": "^6.23|^7.0",
-                "pestphp/pest": "^1.21",
-                "pestphp/pest-plugin-laravel": "^1.1",
-                "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan-deprecation-rules": "^1.0",
-                "phpstan/phpstan-phpunit": "^1.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "GenieFintech\\Num\\NumServiceProvider"
-                    ],
-                    "aliases": {
-                        "Nrc": "GenieFintech\\Num\\Facades\\Num"
-                    }
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "GenieFintech\\Num\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Tint Naing Win",
-                    "email": "amigo.k8@gmail.com"
-                }
-            ],
-            "description": "To convert the unicode digit to another unicode digit.",
-            "keywords": [
-                "Myanmar",
-                "english",
-                "laravel",
-                "number",
-                "thai",
-                "unicode"
-            ],
-            "support": {
-                "issues": "https://github.com/genie-fintech/laravel-num/issues",
-                "source": "https://github.com/genie-fintech/laravel-num/tree/v1.0.0"
-            },
-            "time": "2022-02-27T18:11:36+00:00"
-        },
-        {
-            "name": "genie-fintech/laravel-ocr",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "../laravel-ocr",
-                "reference": "afef3bd8f365b5607fc4c879f18641b8beee7960"
-            },
-            "require": {
-                "ext-fileinfo": "*",
-                "genie-fintech/laravel-num": "^1.0",
-                "guzzlehttp/guzzle": "^7.4",
-                "illuminate/support": "^9.0",
-                "php": "^8.1"
-            },
-            "require-dev": {
-                "nunomaduro/collision": "^6.1",
-                "nunomaduro/larastan": "^1.0|^2.0",
-                "orchestra/testbench": "^7.0",
-                "pestphp/pest": "^1.21",
-                "pestphp/pest-plugin-laravel": "^1.1",
-                "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan-deprecation-rules": "^1.0",
-                "phpstan/phpstan-phpunit": "^1.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "GenieFintech\\Ocr\\OcrServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "GenieFintech\\Ocr\\": "src/"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "GenieFintech\\Ocr\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "analyse": [
-                    "vendor/bin/phpstan analyse"
-                ],
-                "test": [
-                    "vendor/bin/pest"
-                ],
-                "test-coverage": [
-                    "vendor/bin/pest --coverage"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Naing Min Khant",
-                    "email": "naingminkhant@geniefintech.com"
-                },
-                {
-                    "name": "Tint Naing Win",
-                    "email": "tintnaingwin@geniefintech.com"
-                }
-            ],
-            "description": "This package is for building easy to do for OCR.",
-            "homepage": "https://github.com/genie-fintech/laravel-ocr",
-            "keywords": [
-                "ekyc",
-                "laravel",
-                "laravel-ocr",
-                "ocr",
-                "passsid"
-            ],
-            "transport-options": {
-                "relative": true
-            }
-        },
-        {
             "name": "hamcrest/hamcrest-php",
             "version": "v2.0.1",
             "source": {
@@ -8122,9 +7970,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "genie-fintech/laravel-ocr": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
