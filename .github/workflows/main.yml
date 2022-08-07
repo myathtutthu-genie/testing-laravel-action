@@ -37,9 +37,11 @@ jobs:
       env:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
       with:
+        webhook: ${{ secrets.DISCORD_WEBHOOK }}
         title: "deploy"
         description: "Build and deploy to GitHub Pages"
         color: 0x0000ff
+        username: GitHub Actions
         status: ${{ job.status }}
 
   output-debug:
