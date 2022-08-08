@@ -32,6 +32,15 @@ jobs:
       run: vendor/bin/phpunit --testdox
     - name: Laravel Pint
       uses: aglipanci/laravel-pint-action@0.1.0
+    - uses: sarisia/actions-status-discord@v1
+      if: always()
+      with:
+        webhook: ${{ secrets.DISCORD_WEBHOOK }}
+        title: "deploy"
+        description: "Build and deploy to GitHub Pages"
+        color: 0x0000ff
+        username: GitHub Actions
+        status: ${{ job.status }}
 
   output-debug:
     runs-on: ubuntu-18.04
